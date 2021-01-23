@@ -12,8 +12,8 @@ router.get('/', async (req, res) => {
         const posts = await Post.find()
         res.json(posts)
     } catch (err) {
-        console.log('err ' + err)
         res.json({message: err})
+        alert('some heapand')
     }
 })
 // http://localhost:3000/posts/specific
