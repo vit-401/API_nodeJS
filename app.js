@@ -34,11 +34,7 @@ mongoose.connect(
         console.log('connect to DB')
     })
 
-let port = process.env.PORT;
-if (port == null || port == "") {
-    port = 8000;
-}
-app.listen(port)
+app.listen(process.env.PORT);
 
 
 //Get data i JS
